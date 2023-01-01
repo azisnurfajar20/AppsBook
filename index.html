@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perpusnas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Perpustakaan Apps</h1>
+  </header>
+
+  <div class="wrapper">
+    <div class="container bg-white shadow" id="add-todo">
+      <h2 class="container-header text-center">Pendataan Peminjaman Buku Perpustakaan</h2>
+      <form class="form" action="#" id="form">
+        <div class="form-group form-title">
+          <label for="title">Judul</label>
+          <input type="text" id="judul" name="judul" required>
+        </div>
+        <div class="form-group form-title">
+          <label for="penerbit">Penerbit</label>
+          <input type="text" id="penerbit" name="penerbit" required>
+        </div>
+        <div class="form-group form-title">
+          <label for="pengarang">Pengarang</label>
+          <input type="text" id="pengarang" name="pengarang" required>
+        </div>
+        <div class="form-group form-title">
+          <label for="genBuku">Genre Buku</label>
+          <input type="text" id="genBuku" name="genBuku" required>
+        </div>
+        <div class="form-group form-title">
+          <label for="date">Tanggal Terbit</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <input type="submit" value="Submit" name="Submit" class="btn-submit">
+      </form>
+    </div>
+    <div class="container">
+      <h2 class="container-header">Belum Selesai Dibaca</h2>
+      <div class="list-item" id="todos">
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="container-header">Selesai Dibaca</h2>
+      <div class="list-item" id="completed-todos">
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/script.js" type="text/javascript"></script>
+</body>
+
+</html>
